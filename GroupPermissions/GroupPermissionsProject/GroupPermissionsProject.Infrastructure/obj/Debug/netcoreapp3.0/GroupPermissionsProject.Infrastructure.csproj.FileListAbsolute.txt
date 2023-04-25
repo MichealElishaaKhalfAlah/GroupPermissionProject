@@ -1,0 +1,16 @@
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Infrastructure\bin\Debug\netcoreapp3.0\GroupPermissionsProject.Infrastructure.deps.json
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Infrastructure\bin\Debug\netcoreapp3.0\GroupPermissionsProject.Infrastructure.runtimeconfig.json
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Infrastructure\bin\Debug\netcoreapp3.0\GroupPermissionsProject.Infrastructure.runtimeconfig.dev.json
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Infrastructure\bin\Debug\netcoreapp3.0\GroupPermissionsProject.Infrastructure.dll
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Infrastructure\bin\Debug\netcoreapp3.0\GroupPermissionsProject.Infrastructure.pdb
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Infrastructure\bin\Debug\netcoreapp3.0\GroupPermissionsProject.Core.dll
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Infrastructure\bin\Debug\netcoreapp3.0\GroupPermissionsProject.Core.pdb
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Infrastructure\obj\Debug\netcoreapp3.0\GroupPermissionsProject.Infrastructure.csproj.AssemblyReference.cache
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Infrastructure\obj\Debug\netcoreapp3.0\GroupPermissionsProject.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Infrastructure\obj\Debug\netcoreapp3.0\GroupPermissionsProject.Infrastructure.AssemblyInfoInputs.cache
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Infrastructure\obj\Debug\netcoreapp3.0\GroupPermissionsProject.Infrastructure.AssemblyInfo.cs
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Infrastructure\obj\Debug\netcoreapp3.0\GroupPermissionsProject.Infrastructure.csproj.CoreCompileInputs.cache
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Infrastructure\obj\Debug\netcoreapp3.0\GroupPermissionsProject.Infrastructure.csproj.CopyComplete
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Infrastructure\obj\Debug\netcoreapp3.0\GroupPermissionsProject.Infrastructure.dll
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Infrastructure\obj\Debug\netcoreapp3.0\GroupPermissionsProject.Infrastructure.pdb
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Infrastructure\obj\Debug\netcoreapp3.0\GroupPermissionsProject.Infrastructure.genruntimeconfig.cache

@@ -1,0 +1,10 @@
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Core\bin\Debug\netcoreapp3.0\GroupPermissionsProject.Core.deps.json
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Core\bin\Debug\netcoreapp3.0\GroupPermissionsProject.Core.dll
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Core\bin\Debug\netcoreapp3.0\GroupPermissionsProject.Core.pdb
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Core\obj\Debug\netcoreapp3.0\GroupPermissionsProject.Core.csproj.AssemblyReference.cache
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Core\obj\Debug\netcoreapp3.0\GroupPermissionsProject.Core.GeneratedMSBuildEditorConfig.editorconfig
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Core\obj\Debug\netcoreapp3.0\GroupPermissionsProject.Core.AssemblyInfoInputs.cache
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Core\obj\Debug\netcoreapp3.0\GroupPermissionsProject.Core.AssemblyInfo.cs
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Core\obj\Debug\netcoreapp3.0\GroupPermissionsProject.Core.csproj.CoreCompileInputs.cache
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Core\obj\Debug\netcoreapp3.0\GroupPermissionsProject.Core.dll
+M:\TaskMkl\GroupPermissionsProject\GroupPermissionsProject.Core\obj\Debug\netcoreapp3.0\GroupPermissionsProject.Core.pdb

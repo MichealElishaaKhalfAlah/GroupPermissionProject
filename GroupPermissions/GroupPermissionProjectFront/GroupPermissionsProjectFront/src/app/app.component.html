@@ -1,0 +1,118 @@
+<p-toolbar styleClass="mb-4">
+    <ng-template pTemplate="left">
+        <button pButton pRipple label="New" icon="pi pi-plus" class="p-button-success mr-2"
+            (click)="openNew()"></button>
+        <!-- <button pButton pRipple [label]="Delete" icon="pi pi-trash" class="p-button-danger"
+            (click)="deleteSelectedProducts()" [disabled]="!selectedProducts || !selectedProducts.length"></button> -->
+    </ng-template>
+</p-toolbar>
+
+<p-table #dt [value]="Permissions" [rows]="10" [paginator]="true"
+    [globalFilterFields]="['name','country.name','representative.name','status']" [(selection)]="selectedPermission"
+    [rowHover]="true" dataKey="id" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+    [showCurrentPageReport]="true">
+    <ng-template pTemplate="caption">
+        <div class="flex align-items-center justify-content-between">
+            <div class="p-field">
+                <h5 class="m-0">GroupPermissions</h5>
+            </div>
+            <div class="p-field">
+                <span class="p-input-icon-left">
+                    <div class="p-field">
+                        <label for="ID">Groups</label>
+                        <p-dropdown [(ngModel)]="userGroupID" inputId="ID" [options]="userGroupsList"
+                            placeholder="Select" optionLabel="ArabicName">
+                            <ng-template let-option pTemplate="item">
+                                <span [class]="'product-badge status-' + option.ArabicName">{{option.ArabicName}}</span>
+                            </ng-template>
+                        </p-dropdown>
+                        <button pButton pRipple icon="pi pi-search" class="p-button-rounded p-button-warning"
+                            (click)="check(userGroupID)"></button>
+                    </div>
+                </span>
+            </div>
+
+        </div>
+    </ng-template>
+    <ng-template pTemplate="header">
+        <tr>
+            <!-- <th style="width: 3rem">
+                <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+            </th> -->
+            <!-- <th pSortableColumn="ID">id <p-sortIcon field="ID"></p-sortIcon></th> -->
+            <th pSortableColumn="ArabicName">ArabicName <p-sortIcon field="ArabicName"></p-sortIcon></th>
+            <th pSortableColumn="EnglishName">EnglishName <p-sortIcon field="EnglishName"></p-sortIcon></th>
+
+            <th pSortableColumn="PageId">PageId <p-sortIcon field="PageId"></p-sortIcon></th>
+            <th pSortableColumn="CanView">CanView <p-sortIcon field="CanView"></p-sortIcon></th>
+            <th pSortableColumn="CanAdd">CanAdd <p-sortIcon field="CanAdd"></p-sortIcon></th>
+            <th pSortableColumn="CanEdit">CanEdit <p-sortIcon field="CanEdit"></p-sortIcon></th>
+            <th pSortableColumn="CanDelete">CanDelete <p-sortIcon field="CanDelete"></p-sortIcon></th>
+            <!-- <th></th> -->
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-Permission>
+        <tr>
+            <!-- <td>
+                <p-tableCheckbox [value]="Permission"></p-tableCheckbox>
+            </td> -->
+            <td>{{Permission.userGroup.ArabicName}}</td>
+            <td>{{Permission.userGroup.EnglishName}}</td>
+            <td>{{Permission.PageId}}</td>
+            <td>
+                <!-- [(ngModel)]="Permission.CanView" "[value]="Permission.CanView -->
+                <!-- <input type="checkbox" id="CanView" name="CanView" :value="Permission.CanView"> -->
+                <input type="checkbox" :id="Permission.CanView" :name="Permission.CanView" :value="true">
+
+            </td>
+            <td>
+                <input type="checkbox" id="CanAdd" name="CanAdd" :value="Permission.CanAdd">
+                <!-- <p-tableCheckbox  [(ngModel)]="Permission.CanAdd" [value]="Permission.CanAdd"></p-tableCheckbox> -->
+            </td>
+            <td>
+                <input type="checkbox" id="CanEdit" name="CanEdit" :value="Permission.CanEdit">
+                <!-- <p-tableCheckbox  [(ngModel)]="Permission.CanEdit" [value]="Permission.CanEdit"></p-tableCheckbox> -->
+            </td>
+            <td>
+                <input type="checkbox" id="CanDelete" name="CanDelete" :value="Permission.CanDelete">
+                <!-- <p-tableCheckbox [(ngModel)]="Permission.CanDelete" [value]="Permission.CanDelete"></p-tableCheckbox> -->
+            </td>
+            <!-- <td>
+                <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success mr-2"
+                    (click)="editProduct(Permission)"></button>
+                <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning"
+                    (click)="deleteProduct(Permission)"></button>
+            </td> -->
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="summary">
+        <div class="flex align-items-center justify-content-between">
+            In total there are {{Permissions ? Permissions.length : 0 }} Permissions.
+        </div>
+    </ng-template>
+</p-table>
+
+<p-dialog [(visible)]="userGroupDialog" [style]="{width: '450px'}" header="Add Group" [modal]="true"
+    styleClass="p-fluid">
+    <ng-template pTemplate="content">
+        <div class="p-field">
+            <label for="name">ArabicName</label>
+            <input type="text" pInputText id="name" [(ngModel)]="userGroup.ArabicName" required autofocus />
+            <small class="p-error" *ngIf="submitted && !userGroup.ArabicName">ArabicName is required.</small>
+        </div>
+        <div class="p-field">
+            <label for="name">EnglishName</label>
+            <input type="text" pInputText id="name" [(ngModel)]="userGroup.EnglishName" required autofocus />
+            <small class="p-error" *ngIf="submitted && !userGroup.EnglishName">EnglishName is required.</small>
+        </div>
+
+    </ng-template>
+
+    <ng-template pTemplate="footer">
+        <button pButton pRipple label="Cancel" icon="pi pi-times" class="p-button-text" (click)="hideDialog()"></button>
+        <button pButton pRipple label="Save" icon="pi pi-check" class="p-button-text"
+            (click)="saveUserGroup()"></button>
+    </ng-template>
+</p-dialog>
+
+<p-confirmDialog [style]="{width: '450px'}"></p-confirmDialog>
